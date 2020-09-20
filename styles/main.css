@@ -136,12 +136,14 @@ footer {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center;
+		height: 10vh;
 	}
 
 	.card-introduction {
 		border: none;
 		text-align: center;
 		align-content: center;
+		height: 30vh;
 	}
 
 	.card-introduction-first {
