@@ -120,25 +120,25 @@ main .calculator {
 
 @media screen and (min-width: 1200px) {
 	main {
-		height: 660px;
+		height: 500px;
 	}
 
 	.supervisor {
 		position: relative;
-		right: 400px;
-		top: 200px;
+		right: 348px;
+		top: 133px;
 	}
 	.team-builder {
 		position: relative;
-		bottom: 200px;
+		bottom: 240px;
 	}
 	.karma {
 		position: relative;
-		left: 400px;
-		bottom: 265px;
+		left: 346px;
+		bottom: 331px;
 	}
 	.calculator {
 		position: relative;
-		bottom: 300px;
+		bottom: 463px;
 	}
 }
