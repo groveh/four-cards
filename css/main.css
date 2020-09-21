@@ -1,0 +1,144 @@
+/* ======= VARIABLES ======= */
+:root {
+	--red: hsl(0, 78%, 62%);
+	--cyan: hsl(180, 62%, 55%);
+	--orange: hsl(34, 97%, 64%);
+	--blue: hsl(212, 86%, 64%);
+	--very-dark-blue: hsl(234, 12%, 34%);
+	--grayish-blue: hsl(229, 6%, 66%);
+	--very-light-gray: hsl(0, 0%, 98%);
+}
+
+/* ======= GENERAL ======= */
+
+body {
+	font-family: "Poppins", serif;
+	background-color: var(--very-light-gray);
+}
+
+/* ======= MOBILE VERSION ======= */
+
+header {
+	margin: 80px auto;
+	text-align: center;
+	width: 300px;
+}
+
+header .header-title {
+	font-weight: 30;
+	font-size: 24px;
+	color: var(--grayish-blue);
+}
+
+header .header-subtitle {
+	color: var(--very-dark-blue);
+	font-weight: 600;
+	font-size: 24px;
+}
+
+header .header-paragraph {
+	font-weight: 300;
+	color: var(--grayish-blue);
+	font-size: 15px;
+}
+
+/* Ajuste de texto para dimensiones intermedias */
+@media screen and (min-width: 900px) {
+	header {
+		width: 500px;
+	}
+	header .header-title {
+		font-size: 34px;
+	}
+	header .header-subtitle {
+		font-size: 34px;
+	}
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main .card {
+	width: 320px;
+	height: 200px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 25px 2px rgba(163, 165, 174, 0.459);
+	margin-bottom: 30px;
+}
+
+main .card .card-container {
+	display: flex;
+	flex-flow: column wrap;
+	margin: 30px;
+}
+
+main .card .card-title {
+	font-weight: 600;
+	font-size: 22px;
+	color: var(--very-dark-blue);
+	margin-bottom: 8px;
+}
+
+main .card .card-text {
+	font-size: 14px;
+	color: var(--grayish-blue);
+	margin-bottom: 20px;
+}
+
+main .card-image {
+	align-self: flex-end;
+}
+
+main .supervisor {
+	border-top: 3px solid var(--cyan);
+}
+
+main .team-builder {
+	border-top: 3px solid var(--red);
+}
+
+main .karma {
+	border-top: 3px solid var(--orange);
+}
+main .calculator {
+	border-top: 3px solid var(--blue);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+/* ======= DESKTOP VERSION ======= */
+
+@media screen and (min-width: 1200px) {
+	main {
+		height: 660px;
+	}
+
+	.supervisor {
+		position: relative;
+		right: 400px;
+		top: 200px;
+	}
+	.team-builder {
+		position: relative;
+		bottom: 200px;
+	}
+	.karma {
+		position: relative;
+		left: 400px;
+		bottom: 265px;
+	}
+	.calculator {
+		position: relative;
+		bottom: 300px;
+	}
+}
